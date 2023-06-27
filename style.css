@@ -1,0 +1,161 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: auto;
+    background-color: #8D7B8B;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    z-index: 1;
+    background-color: #4f3362;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+}
+
+header ul {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px white;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+header ul li a:hover:after {
+    transform: scaleX(1);
+}
+
+.input-table {
+    width: 100%;
+    padding: 10px;
+    background-color: #4f3362;
+    position: fixed;
+    top: 40px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.input-container input {
+    margin: 0 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+}
+
+.input-container input:focus {
+    outline: 0;
+}
+
+.input-container button {
+    width: 100%;
+    margin: 0 5px;
+    max-width: 300px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.nav-table {
+    width: 100%;
+    margin-top: 105px;
+}
+
+.nav-table thead tr th {
+    display: inline-block;
+    padding: 0 100px;
+}
+
+table {
+    background-color: #eee;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 8px auto;
+}
+
+tr {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:first-child {
+    border-top: 1px solid #ccc;
+}
+
+td {
+    padding: 20px;
+}
+
+.success {
+    background-color: #ad92f1;
+    color: white;
+    transition: 250ms ease-in-out;
+}
+
+.success:hover {
+    background-color: #8f78c6;
+}
+
+.delete, .print {
+    border: 0;
+    width: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #e92039;
+    color: rgb(255, 255, 255);
+    transition: 250ms ease-in-out;
+}
+
+.delete:hover {
+    background-color: #bf1a2f;
+}
+
+.print {
+    background-color: #8bbf37;
+    color: rgb(255, 255, 255);
+    transition: 250ms ease-in-out;
+}
+
+.print:hover {
+    background-color: #749f2e;
+}
