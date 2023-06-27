@@ -9,5 +9,6 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-// Em processo de desenvolvimento. <br> Muita coisa não está na branch ainda <br>
+// Em processo de desenvolvimento
+// Muita coisa não está na branch ainda 
 // Lembrar que ainda não está responsivo para celular (telas menores)
