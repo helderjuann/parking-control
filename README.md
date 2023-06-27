@@ -1,7 +1,8 @@
 # parking-control
 
 Estou criando esse sistema simples para gerenciar estacionamentos de veículos
-Você consegue personalizar a impressão (Recomendado utilizar impressora térmica)
+Você consegue personalizar a impressão 
+*Recomendado utilizar impressora térmica*
 
 - Sistema de entrada e saída
 - Sistema de caixa e controle
