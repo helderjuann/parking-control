@@ -38,6 +38,11 @@ header ul {
 
 header ul li {
     float: left;
+    padding: 0 10px;
+}
+
+header ul li.right {
+    float: right;
 }
 
 header ul li a {
@@ -133,11 +138,21 @@ td {
     background-color: #8f78c6;
 }
 
-.delete, .print {
+.price, .print, .delete {
     border: 0;
     width: 60px;
     padding: 10px;
     cursor: pointer;
+}
+
+.price {
+    background-color: #3D97E1;
+    color: rgb(255, 255, 255);
+    transition: 250ms ease-in-out;
+}
+
+.price:hover {
+    background-color: #1C6DB0;
 }
 
 .delete {
@@ -158,4 +173,98 @@ td {
 
 .print:hover {
     background-color: #749f2e;
+}
+
+/*Out of index*/
+
+.ticket-nav {
+    padding-left: 30px;
+    float: right;
+}
+
+.container .tablef {
+    width: 100%;
+    padding-top: 80px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container .tablef input {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.container .tablef input:focus {
+    outline: 0;
+}
+
+.container .tablef .custom-select {
+    position: relative;
+}
+
+.container .tablef .custom-select select {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.container .tablef .custom-select select:focus {
+    outline: 0;
+}
+
+.container .tablef .custom-select select::-ms-expand {
+    display: none;
+}
+
+.container .payment {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.container .payment button {
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 8px;
+    background-color: #ad92f1;
+    border: 0;
+    cursor: pointer;
+    margin: 2px;
+    border: 1px solid #ccc;
+    transition: 250ms ease-in-out;
+}
+
+.container .payment button:hover {
+    background-color: #8f78c6;
+}
+
+.container-checkout {
+    margin-top: -30px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 400px;
+    }
+
+    .container:not(:nth-of-type(2)) {
+        max-width: 350px;
+    }
+
+    .container .payment button {
+        max-width: 350px;
+    }
+
+    .container table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }

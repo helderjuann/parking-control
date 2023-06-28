@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição do meu site">
+    <meta name="keywords" content="palavras,separadas,por,virgula">
+    <meta name="author" content="Helder Juan">
+    <meta name="viewport" content="
+    width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Estacionamento - Recibos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4162/4162840.png">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Entrada</a></li>
+            <li><a href="checkout.html">Saída</a></li>
+            <li><a href="logs.html">Histórico</a></li>
+            <li class="ticket-nav"><a href="ticket.html">Recibos</a></li>
+        </ul>
+    <div class="clear"></div>
+    </header>
+
+    <div class="container">
+    <div class="tablef">
+        <input type="text" id="carName" placeholder="Nome do veículo" maxlength="16" autocomplete="off"/>
+        <input type="text" id="licence" placeholder="Placa do veículo" maxlength="8" autocomplete="off"/>
+        <div class="custom-select">
+            <select name="select" id="typef">
+                <option value="" disabled selected>Tipo de recibo</option>
+                <option value="Avulso">Avulso</option>
+                <option value="Mensalidade">Mensalidade</option>
+                <option value="Serviço">Serviço de Guincho</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div><!-- custom-select -->
+        <input name="campo1" id="valuef" placeholder="Valor" autocomplete="off" onkeypress="mask(this,moneyrs)"/>
+        <div class="custom-select">
+            <select name="select" id="paymentf">
+                <option value="" disabled selected>Forma de pagamento</option>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Aplicativo">Aplicativo</option>
+                <option value="Transferência">Transferência</option>
+                <option value="Débito">Cartão de Débito</option>
+                <option value="Crédito">Cartão de Crédito</option>
+            </select>
+        </div><!-- custom-select -->
+    </div><!-- tablef -->
+    </div><!-- container -->
+    <div class="container">                    
+    <div class="payment">
+        <button id="printf">Imprimir</button>
+    </div><!-- payment -->
+    </div><!-- container -->
+</body>
+<script src="ticket.js"></script>
+<script src="jquery.js"></script>
+</html>

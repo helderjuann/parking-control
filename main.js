@@ -22,7 +22,7 @@
         <td>${car.name}</td>
         <td>${car.licence}</td>
         <td class="verify">
-          <button class="delete" data-id=${id}">Saída</button>
+          <button class="price" data-id=${id}">Preço</button>
           <button class="print" data-id=${id}">Print</button>
         </td>
       `;
@@ -54,58 +54,58 @@
 
     $("#licence").addEventListener("input", function(event) {
       var licence = document.getElementById("licence");
-      var valor = licence.value
-      if (valor.length === 3 && !valor.includes("-")) {
-        valor = valor.slice(0, 3) + "-" + valor.slice(3);
+      var valuef = licence.value
+      if (valuef.length === 3 && !valuef.includes("-")) {
+        valuef = valuef.slice(0, 3) + "-" + valuef.slice(3);
       }
-      licence.value = valor;
+      licence.value = valuef;
     });
 
-    function checkOut(info) {
-      const tempoEntrada = new Date(info[1].dataset.time);
-      const tempoAtual = new Date();
-      const period = tempoAtual - tempoEntrada;
+    function checkPrice(info) {
+      const entryTime = new Date(info[1].dataset.time);
+      const timeNow = new Date();
+      const period = timeNow - entryTime;
 
       const days = Math.floor(period / (1000 * 60 * 60 * 24));
       const hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((period % (1000 * 60 * 60)) / (1000 * 60));
 
-      let preco = 0;
+      let price = 0;
 
       if (days > 6) {
-        preco += 120;
+        price += 120;
       } else if (days > 5) {
-        preco += 100;
+        price += 100;
       } else if (days > 4) {
-        preco += 80;
+        price += 80;
       } else if (days > 3) {
-        preco += 50;
+        price += 50;
       } else if (days > 2) {
-        preco += 45;
+        price += 45;
       } else if (days == 1) {
-        preco += 35;
+        price += 35;
       }
 
       if (hours >= 24) {
-        preco += 35;
+        price += 35;
         const remainingHours = hours - 24;
-        preco += remainingHours * 5;
+        price += remainingHours * 5;
       } else {
         if (hours < 1) {
-        preco += 5;
+        price += 5;
       } else if (hours < 2) {
-        preco += 10;
+        price += 10;
       } else if (hours < 3) {
-        preco += 15;
+        price += 15;
       } else if (hours < 4) {
-        preco += 20;
+        price += 20;
       } else if (hours === 5 || hours === 6 || hours === 7 || hours === 8 || hours === 9) {
-        preco += 20;
+        price += 20;
       } else if (hours < 10 || hours === 11 || hours === 12) {
-        preco += 25;
+        price += 25;
       } else if (hours < 13 || hours === 14 || hours === 15 || hours === 16 || hours === 17 || hours === 18 || 
         hours === 19 || hours === 20 || hours === 21 || hours === 22 || hours === 23) {
-        preco += 35;
+        price += 35;
         }
       }
     
@@ -117,16 +117,10 @@
        ${hours} hora(s)
        ${minutes} minuto(s)
 
-Valor: R$ ${preco} Reais                                                 Deseja encerrar?`;
-    
-      if (!confirm(msg)) {
-        return;
-      } 
-    
-      const garage = getGarage().filter(c => c.licence.trim().toUpperCase() !== licence);
-      localStorage.garage = JSON.stringify(garage);
-    
-      renderGarage();
+Valor: R$ ${price} Reais`;
+
+      alert(msg);
+      
     }
 
   const getGarage = () => localStorage.garage ? JSON.parse(localStorage.garage) : [];
@@ -134,8 +128,8 @@ Valor: R$ ${preco} Reais                                                 Deseja 
   renderGarage();
 
   $("#garage").addEventListener("click", (e) => {
-    if (e.target.className === "delete") {
-      checkOut(e.target.parentElement.parentElement.cells);
+    if (e.target.className === "price") {
+      checkPrice(e.target.parentElement.parentElement.cells);
     } else if (e.target.className === "print") {
       const carName = e.target.parentElement.parentElement.cells[2].textContent;
       const carLicence = e.target.parentElement.parentElement.cells[3].textContent;
@@ -224,10 +218,10 @@ Valor: R$ ${preco} Reais                                                 Deseja 
       </style>
 
         <div class=container-title>
-          <h1>Nome Estacionamento</h1>
+          <h1>Nome do Estacionamento</h1>
           <span>Mensagem Importante</span>
           <h2>CNPJ</h2>
-          <p>Endereço do Estacionamento<p>
+          <p>Endereço<p>
           <p>Telefone(s)<p>
         </div>
 
@@ -237,7 +231,7 @@ Valor: R$ ${preco} Reais                                                 Deseja 
         </div>
 
         <div class=container-body>
-          <p>Tipo: Tipo</p>
+          <p>Tipo: Avulso</p>
           <p>Data: ${new Date(today).toLocaleDateString('pt-BR',)}</p>
           <p>Entrada: ${new Date(carTime).toLocaleString('pt-BR', { hour: 'numeric', minute: 'numeric' })}</p>
         </div>
