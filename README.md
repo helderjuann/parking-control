@@ -9,6 +9,7 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-// Em processo de desenvolvimento
-// Muita coisa não está na branch ainda 
-// Apliquei o responsivo básico. Preciso corrigir bugs
+Em processo de desenvolvimento <br>
+Muita coisa não está na branch ainda <br>
+Apliquei o responsivo básico <br>
+Preciso corrigir bugs <br>
