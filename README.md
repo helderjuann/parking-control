@@ -11,4 +11,4 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 
 // Em processo de desenvolvimento
 // Muita coisa não está na branch ainda 
-// Lembrar que ainda não está responsivo para celular (telas menores)
+// Apliquei o responsivo básico. Preciso corrigir bugs
