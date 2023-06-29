@@ -108,6 +108,10 @@ header ul li a:hover:after {
     padding: 0 100px;
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
+
 table {
     background-color: #eee;
     border-collapse: collapse;
@@ -178,7 +182,6 @@ td {
 /*Out of index*/
 
 .ticket-nav {
-    padding-left: 30px;
     float: right;
 }
 
@@ -250,6 +253,18 @@ td {
 
 @media screen and (max-width: 768px) {
 
+    header ul li a {
+        font-size: 13px;
+    }
+
+    .input-container input {
+        font-size: 10px;
+    }
+
+    .input-container button {
+        font-size: 10px;
+    }
+
     .container {
         max-width: 400px;
     }
@@ -258,13 +273,27 @@ td {
         max-width: 350px;
     }
 
+    .container .tablef input {
+        font-size: 10px;
+    }
+
+    .container .tablef select {
+        font-size: 10px;
+    }
+
     .container .payment button {
         max-width: 350px;
+        font-size: 10px;
     }
 
     .container table tr {
         display: flex;
         flex-direction: column;
+        font-size: 12px;
+    }
+
+    .delete, .price, .print {
+        font-size: 12px;
     }
     
 }
