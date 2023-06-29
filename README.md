@@ -9,4 +9,4 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebrando a partir de 310px*) <br> Corrigir a data que está sempre atualizando
+Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebra em width: 310px*) <br> Corrigir a data que está sempre atualizando
