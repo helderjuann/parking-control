@@ -9,4 +9,4 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-Em processo de desenvolvimento <br> Muita coisa não está na branch ainda <br> Apliquei o responsivo básico <br> Preciso corrigir bugs <br> *Arrumar New Date* <br> Finalizar histórico
+Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebrando a partir de 310px*) <br> Corrigir a data que está sempre atualizando.
