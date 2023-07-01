@@ -79,9 +79,11 @@
       } else if (days > 4) {
         price += 80;
       } else if (days > 3) {
-        price += 50;
+        price += 80;
       } else if (days > 2) {
-        price += 45;
+        price += 80;
+      } else if (days > 1) {
+        price += 70;
       } else if (days == 1) {
         price += 35;
       }
