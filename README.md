@@ -10,4 +10,4 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebra em 310px*) <br> Melhorar a lógica para o cálculo de preço
+Obs. Por enquanto como está em html e os dados são armazenados no cache do navegador, o ideal é separar um e-mail para efetuar a sincronização dos dados. <br> Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebra em 310px*) <br> Melhorar a lógica para o cálculo de preço
