@@ -4,9 +4,10 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 
 - Sistema de entrada e saída
 - Sistema de caixa e controle
+- Sistema de Data e Hora (Com armazenamento local)
 - Mensalistas e clientes fixos
 - Emissão de nota fiscal
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebra em 310px*) <br> Corrigir a data que está sempre atualizando <br> Melhorar a lógica para o cálculo de preço
+Ainda em desenvolvimento <br> Aplicar o responsivo 100% (*Site quebra em 310px*) <br> Melhorar a lógica para o cálculo de preço
