@@ -10,5 +10,5 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-Melhorar a lógica para o cálculo de preço <br> Ainda em desenvolvimento <br><br>
-Obs. Por enquanto como está em html e os dados são armazenados no cache <br> do navegador, o ideal é separar um e-mail para efetuar a sincronização dos dados. 
+Melhorar a lógica para o cálculo de preço <br> Atualizações frequentes para melhorar o funcionamento <br><br>
+Obs. Por enquanto como está em html e os dados são armazenados no cache <br> do navegador, o ideal é separar um e-mail para efetuar a sincronização dos dados
