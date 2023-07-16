@@ -15,7 +15,7 @@
       const id = '${car.name}-${car.licence}-${car.time}';
       row.id = id;
       row.innerHTML = `
-        <td>${new Date().toLocaleString('pt-BR', { day: 'numeric', month: 'numeric'})}</td>
+        <td>${new Date(car.time).toLocaleString('pt-BR', { day: 'numeric', month: 'numeric'})}</td>
         <td data-time="${car.time}">
           ${new Date(car.time).toLocaleString('pt-BR', { hour: 'numeric', minute: 'numeric' })}
         </td>
