@@ -1,6 +1,7 @@
 # parking-control
 
-Estou criando esse sistema simples para gerenciar estacionamentos de veículos <br> Você consegue personalizar a impressão no arquivo JS <br> *Recomendado utilizar impressora térmica*
+Estou criando esse sistema simples para gerenciar estacionamentos de veículos <br> Você consegue personalizar a impressão no arquivo JS <br> *Recomendado utilizar impressora térmica* <br>
+*Abrir os arquivos JS com alguma IDE para alterar os dados na impressãodo ticket*
 
 - Sistema de entrada e saída
 - Sistema de caixa e controle
