@@ -1,6 +1,6 @@
 # parking-control
 
-Estou criando esse sistema simples para gerenciar estacionamentos de veículos <br> Você consegue personalizar a impressão no arquivo JS <br> *Recomendado utilizar impressora térmica* <br>
+Estou criando esse sistema simples para gerenciar estacionamentos de veículos <br> Você consegue personalizar a impressão no arquivo JS <br><br> *Recomendado utilizar impressora térmica* <br>
 *Abrir os arquivos JS com alguma IDE para alterar os dados na impressãodo ticket*
 
 - Sistema de entrada e saída
@@ -11,5 +11,5 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
-To do: *Mudar a lógica para o cálculo de preço* <br> Atualizações frequentes para melhorar o funcionamento client side<br><br>
+To do: *Mudar a lógica para o cálculo de preço* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
 Obs. Por enquanto como está em html (não .exe) e os dados são armazenados no cache <br> do navegador, o ideal é separar um e-mail para efetuar a sincronização dos dados
