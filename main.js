@@ -2,8 +2,8 @@
     const $ = q => document.querySelector(q);
 
     function renderGarage() {
-      const garage = getGarage();
       $("#garage").innerHTML = "";
+      const garage = JSON.parse(localStorage.getItem("garage")) || [];
       for (let i = garage.length - 1; i >= 0; i--) {
         addCarToGarage(garage[i]);
       }
@@ -12,10 +12,10 @@
     function addCarToGarage(car) {
 
       const row = document.createElement("tr");
-      const id = '${car.name}-${car.licence}-${car.time}';
+      const id = `${car.name}-${car.licence}-${car.time}`;
       row.id = id;
       row.innerHTML = `
-        <td>${new Date(car.time).toLocaleString('pt-BR', { day: 'numeric', month: 'numeric'})}</td>
+        <td>${new Date(car.time).toLocaleDateString('pt-BR', { day: 'numeric', month: 'numeric'})}</td>
         <td data-time="${car.time}">
           ${new Date(car.time).toLocaleString('pt-BR', { hour: 'numeric', minute: 'numeric' })}
         </td>
@@ -24,12 +24,12 @@
         <td class="verify">
           <button class="price" data-id=${id}">Preço</button>
           <button class="print" data-id=${id}">Print</button>
+          <button class="delete" data-id=${id}">Saída</button>
         </td>
       `;
 
       $("#garage").appendChild(row);
     }
-
 
     $("#send").addEventListener("click", e => {
       const name = $("#name").value;
@@ -39,11 +39,14 @@
         alert("Os campos são obrigatórios.");
         return;
       }
-  
-      const car = { name, licence, time: new Date() };
-      const garage = getGarage();
+
+      const currentTime = new Date();
+      const currentDate = currentTime.toLocaleString('pt-BR', { day: 'numeric', month: 'numeric'});
+
+      const car = { name, licence, time: currentTime, addedDate: currentDate };
+      const garage = JSON.parse(localStorage.getItem("garage")) || [];
       garage.push(car);
-      localStorage.garage = JSON.stringify(garage);
+      localStorage.setItem("garage", JSON.stringify(garage));
   
       addCarToGarage(car);
       $("#name").value = "";
@@ -76,15 +79,11 @@
         price += 120;
       } else if (days > 5) {
         price += 100;
-      } else if (days > 4) {
-        price += 80;
       } else if (days > 3) {
-        price += 80;
-      } else if (days > 2) {
         price += 80;
       } else if (days > 1) {
         price += 70;
-      } else if (days == 1) {
+      } else if (days === 1) {
         price += 35;
       }
 
@@ -119,13 +118,26 @@
        ${hours} hora(s)
        ${minutes} minuto(s)
 
-Valor: R$ ${price} Reais`;
+  Valor: R$ ${price} Reais`;
 
       alert(msg);
       
     }
 
-  const getGarage = () => localStorage.garage ? JSON.parse(localStorage.garage) : [];
+    function checkOut(info) {
+      const licence = info[3].textContent.trim().toUpperCase();
+      const msg = `Deseja remover o veículo da garagem?`;
+  
+      if (!confirm(msg)) {
+        return;
+      }
+  
+      const garage = JSON.parse(localStorage.getItem("garage")) || [];
+      const updatedGarage = garage.filter(c => c.licence.trim().toUpperCase() !== licence);
+      localStorage.setItem("garage", JSON.stringify(updatedGarage));
+  
+      renderGarage();
+    }
 
   renderGarage();
 
@@ -136,7 +148,7 @@ Valor: R$ ${price} Reais`;
       const carName = e.target.parentElement.parentElement.cells[2].textContent;
       const carLicence = e.target.parentElement.parentElement.cells[3].textContent;
       const carTime = e.target.parentElement.parentElement.cells[1].dataset.time;
-      const timeElapsed = Date.now();
+      const timeElapsed = Date.now(); 
       const today = new Date(timeElapsed);
 
       const ticketContent = `
@@ -250,9 +262,10 @@ Valor: R$ ${price} Reais`;
       ticketWindow.focus();
       ticketWindow.print();
       ticketWindow.close();
+    } else if (e.target.className === "delete") {
+      checkOut(e.target.parentElement.parentElement.cells);
     }
   });
-
-  })();
+})();
 
   
