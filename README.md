@@ -7,7 +7,6 @@ Estou criando esse sistema simples para gerenciar estacionamentos de veículos <
 - Sistema de entrada e saída
 - Sistema de caixa e controle
 - Sistema de Data e Hora (Com armazenamento local)
-- Mensalistas e clientes fixos
 - Ticket para pagamento
 - Recibo de prestação de serviço
 
