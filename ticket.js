@@ -27,7 +27,7 @@ function moneyrs(v) {
    }else{
       return v;
    }
-};
+}; // Melhorar essa função para simular a opção "número" do excel - Essa função atual não está tão otimizada. 
 
 function ticketPrint(carName, licence, typef, valuef, printf) {
     const timeElapsed = Date.now();
