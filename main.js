@@ -102,9 +102,9 @@
         price += 20;
       } else if (hours === 5 || hours === 6 || hours === 7 || hours === 8 || hours === 9) {
         price += 20;
-      } else if (hours < 10 || hours === 11 || hours === 12) {
+      } else if (hours < 10 || hours === 11 || hours === 12 || hours === 13) {
         price += 25;
-      } else if (hours < 13 || hours === 14 || hours === 15 || hours === 16 || hours === 17 || hours === 18 || 
+      } else if (hours === 14 || hours === 15 || hours === 16 || hours === 17 || hours === 18 || 
         hours === 19 || hours === 20 || hours === 21 || hours === 22 || hours === 23) {
         price += 35;
         }
