@@ -55,15 +55,6 @@
       renderGarage();
     });
 
-    $("#licence").addEventListener("input", function(event) {
-      var licence = document.getElementById("licence");
-      var valuef = licence.value
-      if (valuef.length === 3 && !valuef.includes("-")) {
-        valuef = valuef.slice(0, 3) + "-" + valuef.slice(3);
-      }
-      licence.value = valuef;
-    });
-
     function checkPrice(info) {
       const entryTime = new Date(info[1].dataset.time);
       const timeNow = new Date();
@@ -98,11 +89,11 @@
         price += 10;
       } else if (hours < 3) {
         price += 15;
-      } else if (hours < 4) {
+      } else if (hours < 4 || hours < 5) {
         price += 20;
       } else if (hours === 5 || hours === 6 || hours === 7 || hours === 8 || hours === 9) {
         price += 20;
-      } else if (hours < 10 || hours === 11 || hours === 12 || hours === 13) {
+      } else if (hours < 10 || hours < 11 || hours === 11 || hours === 12 || hours === 13) {
         price += 25;
       } else if (hours === 14 || hours === 15 || hours === 16 || hours === 17 || hours === 18 || 
         hours === 19 || hours === 20 || hours === 21 || hours === 22 || hours === 23) {
@@ -232,11 +223,11 @@
       </style>
 
         <div class=container-title>
-          <h1>Nome do Estacionamento</h1>
-          <span>Mensagem Importante</span>
-          <h2>CNPJ</h2>
-          <p>Endereço<p>
-          <p>Telefone(s)<p>
+          <h1>EstetPARK</h1>
+          <span>TEMOS SERVIÇO DE GUINCHO</span>
+          <h2>CNPJ 37.641.716/0001-88</h2>
+          <p>Rua Nossa Senhora das Mercês, 613<p>
+          <p>(11) 99365-0051 - (11) 94019-4019<p>
         </div>
 
         <div class=container-upperbody>
