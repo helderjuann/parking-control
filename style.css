@@ -10,7 +10,7 @@
 
 html, body {
     height: auto;
-    background-color: #8D7B8B;
+    background-color: #4b4b4b;
 }
 
 .clear {
@@ -25,7 +25,7 @@ html, body {
 
 header {
     z-index: 1;
-    background-color: #4f3362;
+    background-color: #70877F;
     width: 100%;
     padding: 10px;
     position: fixed;
@@ -39,10 +39,6 @@ header ul {
 header ul li {
     float: left;
     padding: 0 10px;
-}
-
-header ul li.right {
-    float: right;
 }
 
 header ul li a {
@@ -65,7 +61,7 @@ header ul li a:hover:after {
 .input-table {
     width: 100%;
     padding: 10px;
-    background-color: #4f3362;
+    background-color: #70877F;
     position: fixed;
     top: 40px;
 }
@@ -95,7 +91,7 @@ header ul li a:hover:after {
     max-width: 300px;
     padding: 10px;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: 1px solid #2F2963;
 }
 
 .nav-table {
@@ -113,7 +109,7 @@ input:focus::placeholder {
 }
 
 table {
-    background-color: #eee;
+    background-color: white;
     border-collapse: collapse;
     width: 100%;
     margin: 8px auto;
@@ -133,21 +129,25 @@ td {
 }
 
 .success {
-    background-color: #ad92f1;
+    background-color: #454372;
     color: white;
     transition: 250ms ease-in-out;
 }
 
 .success:hover {
-    background-color: #8f78c6;
+    background-color: #2F2963;
 }
 
 .price, .print, .delete {
     border: 0;
-    width: 60px;
+    width: 100%;
+    max-width: 60px;
     padding: 10px;
     cursor: pointer;
     margin: 0 4px;
+    position: relative;
+    left: 30px;
+    text-align: center;
 }
 
 .price {
@@ -180,79 +180,6 @@ td {
     background-color: #749f2e;
 }
 
-/*Out of index*/
-
-.ticket-nav {
-    float: right;
-}
-
-.container .tablef {
-    width: 100%;
-    padding-top: 80px;
-    display: inline-block;
-    text-align: center;
-}
-
-.container .tablef input {
-    display: inline-block;
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 2px;
-}
-
-.container .tablef input:focus {
-    outline: 0;
-}
-
-.container .tablef .custom-select {
-    position: relative;
-}
-
-.container .tablef .custom-select select {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 2px;
-    cursor: pointer;
-    appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat, repeat;
-    background-position: right 18px top 50%, 0 0;
-    background-size: 10px auto, 100%;
-}
-
-.container .tablef .custom-select select:focus {
-    outline: 0;
-}
-
-.container .tablef .custom-select select::-ms-expand {
-    display: none;
-}
-
-.container .payment {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.container .payment button {
-    color: white;
-    width: 100%;
-    max-width: 600px;
-    padding: 8px;
-    background-color: #ad92f1;
-    border: 0;
-    cursor: pointer;
-    margin: 2px;
-    border: 1px solid #ccc;
-    transition: 250ms ease-in-out;
-}
-
-.container .payment button:hover {
-    background-color: #8f78c6;
-}
-
 @media screen and (max-width: 768px) {
 
     header ul li a {
@@ -275,28 +202,18 @@ td {
         max-width: 350px;
     }
 
-    .container .tablef input {
-        font-size: 12px;
-    }
-
-    .container .tablef select {
-        font-size: 12px;
-    }
-
-    .container .payment button {
-        max-width: 350px;
-        font-size: 12px;
-    }
-
     .container table tr {
         display: flex;
         flex-direction: column;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .delete, .price, .print {
-        font-size: 12px;
-        margin: 0 auto;
+        font-size: 14px;
+        margin: 0 4px;
+        position: inherit;
+        text-align: center;
+        padding: 10px 2%;
     }
     
 }
