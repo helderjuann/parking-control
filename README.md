@@ -5,10 +5,8 @@ Estou criando esse sistema simples para gerenciar qualquer estacionamento de ve�
 *Abrir os arquivos JS utilizando IDE para alterar os dados na impressãodo ticket*
 
 - Sistema de entrada e saída
-- Sistema de caixa e controle
 - Sistema de Data e Hora (Com armazenamento local)
 - Ticket para pagamento
-- Recibo de prestação de serviço
 - Design simples e de fácil entendimento
 - Botões interativos (*Preço, Print e Saída*)
 
