@@ -4,11 +4,11 @@ Estou criando esse sistema simples para gerenciar qualquer estacionamento de ve�
 *Recomendado utilizar impressora térmica* <br>
 *Abrir os arquivos JS utilizando IDE para alterar os dados na impressãodo ticket*
 
+- Botões interativos (*Preço, Print e Saída*)
+- Design simples e autoexplicativo!
 - Sistema de entrada e saída
 - Sistema de Data e Hora (Com armazenamento local)
 - Ticket para pagamento
-- Design simples e autoexplicativo!
-- Botões interativos (*Preço, Print e Saída*)
 
 To do: *Mudar a lógica para o cálculo de preço e emissão de ticket* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
 Obs. Por enquanto como está em html (não .exe) e os dados são armazenados no cache <br> do navegador, o ideal é separar um e-mail para efetuar a sincronização dos dados
