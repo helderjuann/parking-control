@@ -7,7 +7,7 @@ Estou criando esse sistema simples para gerenciar qualquer estacionamento de ve�
 - Sistema de entrada e saída
 - Sistema de Data e Hora (Com armazenamento local)
 - Ticket para pagamento
-- Design simples e de fácil entendimento
+- Design simples e autoexplicativo!
 - Botões interativos (*Preço, Print e Saída*)
 
 To do: *Mudar a lógica para o cálculo de preço e emissão de ticket* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
