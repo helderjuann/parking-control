@@ -2,7 +2,7 @@
 
 Estou criando esse sistema simples para gerenciar qualquer estacionamento de veículos <br><br> 
 *Recomendado utilizar impressora térmica* <br>
-*Abrir os arquivos JS utilizando IDE para alterar os dados na impressãodo ticket*
+*Abrir os arquivos utilizando IDE para alterar os dados na impressãodo ticket (HTML e JS)*
 
 - Botões interativos (*Preço, Print e Saída*)
 - Design simples e autoexplicativo!
