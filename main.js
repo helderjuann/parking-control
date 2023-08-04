@@ -250,12 +250,21 @@
       const ticketWindow = window.open("", "_blank");
       ticketWindow.document.write(ticketContent);
       ticketWindow.document.close();
-      ticketWindow.focus();
-      ticketWindow.print();
-      ticketWindow.close();
-    } else if (e.target.className === "delete") {
-      checkOut(e.target.parentElement.parentElement.cells);
-    }
+      ticketWindow.onload = printIf();
+      
+      function printIf() {
+        if (window.matchMedia("(any-pointer: coarse)").matches) {
+          ticketWindow.print();
+          ticketWindow.close();
+        } else {
+          ticketWindow.print();
+          ticketWindow.close();
+        }
+      }
+
+      } else if (e.target.className === "delete") {
+        checkOut(e.target.parentElement.parentElement.cells);
+      }
   });
 })();
 
