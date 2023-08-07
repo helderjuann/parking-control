@@ -246,7 +246,7 @@
         </div>
 
       `;
-  
+
       const ticketWindow = window.open("", "_blank");
       ticketWindow.document.write(ticketContent);
       ticketWindow.document.close();
@@ -267,3 +267,5 @@
       }
   });
 })();
+
+  
