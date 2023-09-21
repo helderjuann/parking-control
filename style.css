@@ -23,41 +23,6 @@ html, body {
     max-width: 1200px;
 }
 
-header {
-    z-index: 1;
-    background-color: #70877F;
-    width: 100%;
-    padding: 10px;
-    position: fixed;
-}
-
-header ul {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-header ul li {
-    float: left;
-    padding: 0 10px;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header ul li a:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px white;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-}
-
-header ul li a:hover:after {
-    transform: scaleX(1);
-}
-
 .input-table {
     width: 100%;
     padding: 10px;
