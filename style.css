@@ -28,7 +28,7 @@ html, body {
     padding: 10px;
     background-color: #70877F;
     position: fixed;
-    top: 40px;
+    top: 0px;
 }
 
 .input-container {
@@ -61,7 +61,7 @@ html, body {
 
 .nav-table {
     width: 100%;
-    margin-top: 105px;
+    margin-top: 60px;
 }
 
 .nav-table thead tr th {
