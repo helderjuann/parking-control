@@ -153,6 +153,10 @@ td {
     background-color: #749f2e;
 }
 
+.print:focus {
+    background-color: #527517;
+}
+
 @media screen and (max-width: 768px) {
 
     header ul li a {
