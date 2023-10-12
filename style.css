@@ -103,6 +103,10 @@ td {
     background-color: #2F2963;
 }
 
+.success:focus {
+    background-color: #211c4d;    
+}
+
 .price, .print, .delete {
     border: 0;
     width: 100%;
