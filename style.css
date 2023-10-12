@@ -129,6 +129,10 @@ td {
     background-color: #1C6DB0;
 }
 
+.price:focus {
+    background-color: #125C99;
+}
+
 .delete {
     background-color: #e92039;
     color: rgb(255, 255, 255);
