@@ -26,9 +26,10 @@ html, body {
 .input-table {
     width: 100%;
     padding: 10px;
-    background-color: #70877F;
+    background-color: #266DD3;
     position: fixed;
-    top: 0px;
+    top: 0;
+    z-index: 999;
 }
 
 .input-container {
