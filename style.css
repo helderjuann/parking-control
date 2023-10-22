@@ -95,13 +95,13 @@ td {
 }
 
 .success {
-    background-color: #454372;
+    background-color: #49A078;
     color: white;
     transition: 250ms ease-in-out;
 }
 
 .success:hover {
-    background-color: #2F2963;
+    background-color: #2A6C4D;
 }
 
 .success:focus {
