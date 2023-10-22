@@ -160,10 +160,6 @@ td {
 
 @media screen and (max-width: 768px) {
 
-    header ul li a {
-        font-size: 15px;
-    }
-
     .input-container input {
         font-size: 12px;
     }
