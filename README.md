@@ -1,6 +1,6 @@
 # parking-control
 
-Sistema simples para gerenciar entrada e saída de veículos em um estacionamento <br><br> 
+Sistema simples para estacionamentos de veículos com entrada e saída <br><br> 
 *Recomendado utilizar impressora térmica* <br>
 *Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)*
 
