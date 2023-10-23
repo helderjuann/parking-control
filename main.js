@@ -1,7 +1,7 @@
 (function() {
     const $ = q => document.querySelector(q);
 
-    //Função para renderizar os carros armazenados
+    //Função para renderizar os carros estacionados na garagem
 
     function renderGarage() {
       $("#garage").innerHTML = "";
