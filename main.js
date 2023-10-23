@@ -57,7 +57,7 @@
       renderGarage();
     });
 
-    // Função para checar o preço que o cliente deve pagar - Obs: Preciso melhorar a lógica para fazer o cálculo...
+    // Função para checar o preço que o cliente deve pagar - Obs: Preciso melhorar a lógica para efetuar o cálculo...
 
     function checkPrice(info) {
       const entryTime = new Date(info[1].dataset.time);
