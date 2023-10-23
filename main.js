@@ -1,6 +1,8 @@
 (function() {
     const $ = q => document.querySelector(q);
 
+    //Função para renderizar os carros armazenados
+
     function renderGarage() {
       $("#garage").innerHTML = "";
       const garage = JSON.parse(localStorage.getItem("garage")) || [];
