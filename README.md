@@ -1,15 +1,13 @@
 # parking-control
 
 Sistema simples para estacionamentos de veículos <br><br>
-
-Registra Entrada e Saída - Emite Ticket <br>
-
+<hr>
 *Recomendado utilizar impressora térmica* <br>
 *Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)*
 
 - Botões interativos (*Preço, Print e Saída*)
-- Design simples e autoexplicativo!
-- Sistema de entrada e saída
+- Design simples e autoexplicativo (UX/UI)!
+- Sistema de Entrada e Saída
 - Sistema de Data e Hora (Com armazenamento local)
 - Ticket para pagamento
 
