@@ -3,7 +3,7 @@
 Sistema simples para estacionamentos de veículos <br>
 <hr>
 *Recomendado utilizar impressora térmica* <br><br>
-*Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)* <br>
+*Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)* <br><br>
 
 - Botões interativos (*Preço, Print e Saída*)
 - Design simples e autoexplicativo (UX/UI)!
