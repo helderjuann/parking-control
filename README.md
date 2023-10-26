@@ -2,7 +2,7 @@
 
 Sistema simples para estacionamentos de veículos <br><br>
 
-Registra Entrada e Saída - Emite Ticket
+Registra Entrada e Saída - Emite Ticket <br>
 *Recomendado utilizar impressora térmica* <br>
 *Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)*
 
