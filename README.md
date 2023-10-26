@@ -1,9 +1,9 @@
 # parking-control
 
-Sistema simples para estacionamentos de veículos <br><br>
+Sistema simples para estacionamentos de veículos <br>
 <hr>
-*Recomendado utilizar impressora térmica* <br>
-*Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)*
+*Recomendado utilizar impressora térmica* <br><br>
+*Abrir os arquivos utilizando IDE para alterar os dados na impressão do ticket (HTML e JS)* <br>
 
 - Botões interativos (*Preço, Print e Saída*)
 - Design simples e autoexplicativo (UX/UI)!
