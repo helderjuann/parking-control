@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
-    overflow-x: hidden;
 }
 
 html, body {
@@ -94,18 +93,14 @@ td {
     padding: 15px 20px;
 }
 
-.success {
+.success, .circle {
     background-color: #49A078;
     color: white;
     transition: 250ms ease-in-out;
 }
 
-.success:hover {
+.success:hover, .circle:hover {
     background-color: #2A6C4D;
-}
-
-.success:focus {
-    background-color: #211c4d;    
 }
 
 .price, .print, .delete {
@@ -130,10 +125,6 @@ td {
     background-color: #1C6DB0;
 }
 
-.price:focus {
-    background-color: #125C99;
-}
-
 .delete {
     background-color: #e92039;
     color: rgb(255, 255, 255);
@@ -154,8 +145,26 @@ td {
     background-color: #749f2e;
 }
 
-.print:focus {
-    background-color: #527517;
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.circle-text i {
+    color: white;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -188,6 +197,12 @@ td {
         position: inherit;
         text-align: center;
         padding: 10px 2%;
+    }
+
+    .circle {
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
     }
     
 }
