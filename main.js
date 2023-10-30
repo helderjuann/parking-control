@@ -119,6 +119,8 @@
       
     }
 
+    //Função para remover o carro da garagem - Obs: Preciso fazer um lugar para armazenar os carros que saem...
+
     function checkOut(info) {
       const licence = info[3].textContent.trim().toUpperCase();
       const msg = `Deseja remover o veículo da garagem?`;
@@ -135,6 +137,8 @@
     }
 
   renderGarage();
+
+    //Função para imprimir/emitir o ticket para o veículo que entrou no estabelecimento
 
   $("#garage").addEventListener("click", (e) => {
     if (e.target.className === "price") {
