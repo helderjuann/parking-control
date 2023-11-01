@@ -12,3 +12,7 @@ function disableTextS() {
 }
 
 disableTextS();
+
+function scrollToTop() { 
+    $(window).scrollTop(0); 
+}
