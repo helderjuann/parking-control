@@ -11,5 +11,5 @@ Sistema simples para estacionamentos de veículos <br>
 - Sistema de Data e Hora (Com armazenamento local)
 - Emissão de Ticket
 
-To do: *Lógica para o cálculo de preço e emissão de ticket - Garagem de Saída* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
+To do: *Lógica para o cálculo de preço e emissão de ticket - Garagem de Saída (Histórico de carros removidos)* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
 Obs. Por enquanto como está em html (não .exe) e os dados são armazenados no cache <br> do navegador, o ideal é separar um e-mail para efetuar a sincronização dos dados
