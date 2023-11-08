@@ -17,7 +17,7 @@ function disableTextS() {
 
 disableTextS();
 
-// Levar para o topo da página (Se caso ter muitos carros na garagem)
+// Levar para o topo da página (Se caso ter muitos veículos no estabelecimento)
 
 function scrollToTop() { 
     $(window).scrollTop(0); 
