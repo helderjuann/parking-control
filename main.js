@@ -138,6 +138,8 @@
 
   renderGarage();
 
+    //Aqui vai ficar a função para colocar o carro removido da garagem no histórico
+
     //Função para imprimir/emitir o ticket para o veículo que entrou no estabelecimento
 
   $("#garage").addEventListener("click", (e) => {
