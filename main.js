@@ -119,7 +119,7 @@
       
     }
 
-    //Função para remover o carro da garagem - Obs: Preciso fazer um lugar para armazenar os carros que saem...
+    //Função para remover o carro da garagem
 
     function checkOut(info) {
       const licence = info[3].textContent.trim().toUpperCase();
