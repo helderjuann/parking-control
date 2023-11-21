@@ -70,6 +70,8 @@
 
       let price = 5; // Essa lógica não está da maneira que eu quero ainda, mas foi uma solução melhor que eu encontrei para resolver os problemas da estrutura antiga...
 
+      // Os preços podem ser definidos manualmente, dependendo da tabela de valor do seu estabelecimento. Nesse código utilizei esses valores apenas de exemplo!
+
       if (hours != 0 & minutes != 0) {
         price = hours * 5 + 5;
       }
