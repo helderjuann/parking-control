@@ -1,7 +1,7 @@
 (function() {
     const $ = q => document.querySelector(q);
 
-    //Função para renderizar os carros estacionados na garagem
+    // Função para renderizar os carros estacionados na garagem
 
     function renderGarage() {
       $("#garage").innerHTML = "";
@@ -104,7 +104,7 @@
       
     }
 
-    //Função para remover o carro da garagem
+    // Função para remover o carro da garagem
 
     function checkOut(info) {
       const licence = info[3].textContent.trim().toUpperCase();
@@ -123,9 +123,9 @@
 
   renderGarage();
 
-    //Aqui vai ficar a função para colocar o carro removido da garagem no histórico
+    // Aqui vai ficar a função para colocar o carro removido da garagem no histórico
 
-    //Função para imprimir/emitir o ticket para o veículo que entrou no estabelecimento
+    // Função para imprimir/emitir o ticket para o veículo que entrou no estabelecimento
 
   $("#garage").addEventListener("click", (e) => {
     if (e.target.className === "price") {
