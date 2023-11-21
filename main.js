@@ -67,6 +67,28 @@
       const days = Math.floor(period / (1000 * 60 * 60 * 24));
       const hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((period % (1000 * 60 * 60)) / (1000 * 60));
+
+      let price = 5;
+
+      if (hours != 0 & minutes != 0) {
+        price = hours * 5 + 5;
+      }
+
+      if (days != 0) {
+        price = days * 35;
+        if (price > 250) {
+          price = 250;
+        }
+        if (days > 70) {
+          price = 700;
+        } else if (days > 55) {
+          price = 500;
+        } else if (days > 40) {
+          price = 300;
+        }
+      } else {
+        price = price;
+      }
         
       const licence = info[3].textContent.trim().toUpperCase();
       const msg = 
