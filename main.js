@@ -68,7 +68,7 @@
       const hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((period % (1000 * 60 * 60)) / (1000 * 60));
 
-      let price = 5;
+      let price = 5; // Essa lógica não está da maneira que eu quero ainda, mas foi uma solução melhor que eu encontrei para resolver os problemas da estrutura antiga...
 
       if (hours != 0 & minutes != 0) {
         price = hours * 5 + 5;
