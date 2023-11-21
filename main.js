@@ -67,44 +67,7 @@
       const days = Math.floor(period / (1000 * 60 * 60 * 24));
       const hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((period % (1000 * 60 * 60)) / (1000 * 60));
-
-      let price = 0;
-
-      if (days > 6) {
-        price += 120;
-      } else if (days > 5) {
-        price += 100;
-      } else if (days > 3) {
-        price += 80;
-      } else if (days > 1) {
-        price += 70;
-      } else if (days === 1) {
-        price += 35;
-      }
-
-      if (hours >= 24) {
-        price += 35;
-        const remainingHours = hours - 24;
-        price += remainingHours * 5;
-      } else {
-        if (hours < 1) {
-        price += 5;
-      } else if (hours < 2) {
-        price += 10;
-      } else if (hours < 3) {
-        price += 15;
-      } else if (hours < 4 || hours < 5) {
-        price += 20;
-      } else if (hours === 5 || hours === 6 || hours === 7 || hours === 8 || hours === 9) {
-        price += 20;
-      } else if (hours < 10 || hours < 11 || hours === 11 || hours === 12 || hours === 13) {
-        price += 25;
-      } else if (hours === 14 || hours === 15 || hours === 16 || hours === 17 || hours === 18 || 
-        hours === 19 || hours === 20 || hours === 21 || hours === 22 || hours === 23) {
-        price += 35;
-        }
-      }
-    
+        
       const licence = info[3].textContent.trim().toUpperCase();
       const msg = 
       `O Veículo de placa ${licence} permaneceu estacionado por
