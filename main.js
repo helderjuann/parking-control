@@ -74,6 +74,9 @@
 
       if (hours != 0 & minutes != 0) {
         price = hours * 5 + 5;
+        if (hours >= 7) {
+            price = 40;
+        }
       }
 
       if (days != 0) {
