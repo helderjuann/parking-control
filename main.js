@@ -92,7 +92,7 @@
           price = 300;
         }
       } else {
-        price = 'Calcule o preço!';
+        price = price;
       }
         
       const licence = info[3].textContent.trim().toUpperCase();
