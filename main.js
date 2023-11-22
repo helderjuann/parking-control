@@ -77,7 +77,7 @@
       }
 
       if (days != 0) {
-        price = days * 35;
+        price = days * 40;
         if (price > 250) {
           price = 250;
         }
