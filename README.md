@@ -11,5 +11,5 @@ Sistema simples para estacionamentos de veículos <br>
 - Sistema de Data e Hora (Com armazenamento local)
 - Emissão de Ticket
 
-To do: *Efetuar os testes do cálculo - Histórico para veículos removidos* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
+To do: *Fazer o histórico para veículos removidos* <br> Atualizações frequentes para melhorar o funcionamento client side <br><br>
 Obs. Por enquanto está com LocalStorage e os dados são armazenados no cache do navegador! <br> O ideal é separar um e-mail para efetuar a sincronização dos dados e assim não perder nada.
