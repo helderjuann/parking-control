@@ -2,7 +2,7 @@
 
 Sistema simples para estacionamentos de veículos <br>
 <hr>
-*Recomendado utilizar impressora térmica* <br><br>
+*Utilizar com impressora térmica* <br><br>
 *Editar o conteúdo do ticket com os seus dados* <br><br>
 
 - Botões interativos (*Preço, Print e Saída*)
