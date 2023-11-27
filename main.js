@@ -76,7 +76,7 @@
         price = hours * 5 + 5;
         if (hours >= 7) {
             price = 40;
-        }
+        } // Colocar a nova lógica efetuada aqui - 28/11/23
       }
 
       if (days != 0) {
