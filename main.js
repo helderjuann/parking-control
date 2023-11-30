@@ -76,7 +76,7 @@
         price = hours * 5 + 5;
         if (hours >= 7) {
             price = 40;
-        } // Calcular a diferença de dias + horas para resetar o cálculo a cada dia que passa com o preço novo
+        } // Calcular a diferença de dias + horas para resetar o cálculo a cada dia
       }
 
       if (days != 0) {
