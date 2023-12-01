@@ -40,7 +40,7 @@
       if (!name || !licence) {
         alert("Os campos são obrigatórios.");
         return;
-      }
+      } // Colocar aqui a sequência de requisitos
 
       const currentTime = new Date();
       const currentDate = currentTime.toLocaleString('pt-BR', { day: 'numeric', month: 'numeric'});
