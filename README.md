@@ -11,6 +11,6 @@ Sistema simples para estacionamentos de veículos <br>
 - Sistema de Data e Hora (Com armazenamento local)
 - Emissão de Ticket
 
-Em progresso -> *Histórico de veículos removidos e cálculo de preço* <br>
+Em progresso -> *Histórico de veículos removidos - Cálculo de preço - App Mobile* <br>
 To do -> *Atualizações frequentes para melhorar o funcionamento client side* <br><br>
 Obs. Por enquanto está com LocalStorage e os dados são armazenados no cache do navegador! <br> O ideal é separar um e-mail para efetuar a sincronização dos dados e assim não perder nada.
