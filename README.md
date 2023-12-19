@@ -3,7 +3,7 @@
 Sistema simples para estacionamentos de veículos <br>
 <hr>
 *Utilizar com impressora térmica* <br><br>
-*Editar o conteúdo do ticket com os seus dados* <br><br>
+*Editar o conteúdo do ticket com as suas informações* <br><br>
 
 - Botões interativos (*Preço, Print e Saída*)
 - Design simples e autoexplicativo (UX/UI)!
